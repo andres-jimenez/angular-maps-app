@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import * as mapboxgl from 'mapbox-gl';
+(mapboxgl as any).accessToken =
+  'pk.eyJ1IjoiYW5kcmVzamltZW5leiIsImEiOiJjbGhvem1mMW0wMXJkM3JzNzZkbDB0bWtlIn0.AFDbYHb1bPV2BclE_9ocfw';
 
 import { MapsRoutingModule } from './maps-routing.module';
 import { SideMenuComponent } from './components/side-menu/side-menu.component';
@@ -11,7 +14,15 @@ import { PropertiesPageComponent } from './pages/properties-page/properties-page
 import { ZoomRangePageComponent } from './pages/zoom-range-page/zoom-range-page.component';
 
 @NgModule({
-  declarations: [MiniMapComponent, SideMenuComponent, MapsLayoutComponent, FullScreenPageComponent, MarkersPageComponent, PropertiesPageComponent, ZoomRangePageComponent],
+  declarations: [
+    MiniMapComponent,
+    SideMenuComponent,
+    MapsLayoutComponent,
+    FullScreenPageComponent,
+    MarkersPageComponent,
+    PropertiesPageComponent,
+    ZoomRangePageComponent,
+  ],
   imports: [CommonModule, MapsRoutingModule],
 })
 export class MapsModule {}
