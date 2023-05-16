@@ -15,8 +15,8 @@ export class FullScreenPageComponent implements AfterViewInit {
     const map = new Map({
       container: this.mapContainer.nativeElement,
       style: 'mapbox://styles/mapbox/streets-v12',
-      center: [-74.5, 40],
-      zoom: 9,
+      center: [-75.56, 6.27],
+      zoom: 13,
     });
   }
 }
