@@ -1,0 +1,12 @@
+.side-menu {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+  width: 180px;
+}
+
+li {
+  cursor: pointer;
+  transition: 0.5s background, 0.5s border-color, 0.5s color;
+}
